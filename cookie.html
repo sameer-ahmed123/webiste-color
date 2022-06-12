@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>
+		Clear cookies using Javascript
+	</title>
+</head>
+
+<body>
+	<center>
+		<h1 style="color:green">
+			GeeksforGeeks
+		</h1>
+		<script type="text/javascript">
+			document.cookie = "1P_JAR=akjdsbJKHdjhbk";
+			document.cookie = "CONSENT=YES+IN.en+20170903-09-0";
+
+			function displayCookies() {
+
+				var displayCookies = document.getElementById("display");
+				displayCookies.innerHTML = document.cookie;
+			}
+
+			function deleteCookies() {
+				var allCookies = document.cookie.split(';');
+				
+				// The "expire" attribute of every cookie is
+				// Set to "Thu, 01 Jan 1970 00:00:00 GMT"
+				for (var i = 0; i < allCookies.length; i++)
+					document.cookie = allCookies[i] + "=;expires="
+					+ new Date(0).toUTCString();
+
+				displayCookies.innerHTML = document.cookie;
+
+			}
+		</script>
+		<button onclick="displayCookies()">Display Cookies</button>
+		<button onclick="deleteCookies()">Delete Cookies</button>
+		<p id="display"></p>
+	</center>
+</body>
+
+</html>
+

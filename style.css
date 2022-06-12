@@ -42,7 +42,9 @@
     font-size: 2rem;
     cursor: pointer;
 }
-
+.cursour__none:hover{  /* makes cursor disapear */
+    cursor: none;
+}
 .navbar__menu{
     display: flex;
     align-items: center;

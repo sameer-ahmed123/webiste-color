@@ -65,3 +65,43 @@ const hideMobileMenu = () => {
 // window.innerWidth < 768 &&
 menuLinks.addEventListener('click', hideMobileMenu);
 nav_logo.addEventListener('click', hideMobileMenu);
+
+document.cookie = "username=John Doe; expires=Tue, 19 Jan 2008 03:14:07 GMT;";
+document.cookie = "age = 20"
+
+// alert(document.cookie)
+
+// cookie_remove = document.getElementById("cookie_remove_btn")
+// cookie_remove.addEventListener("click", deleteAllCookies)
+
+
+// function deleteAllCookies() {
+//      var cookies = document.cookie.split(";");
+ 
+//      for (var i = 0; i < cookies.length; i++) {
+//          var cookie = cookies[i];
+//          var eqPos = cookie.indexOf("=");
+//          var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+//          document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+//      }
+//  }
+
+// deleteAllCookies()
+
+// sessionStorage. clear();
+
+// let removing = browser.cookies.remove(
+//      username               // object
+//    )
+   
+// alert(document.cookie.delete)
+
+$(function() {
+     var COOKIE_NAME = 'test_cookie';
+     var options = { path: '/', expires: 10 };
+     $.cookie(COOKIE_NAME, 'test', options); // sets the cookie
+     console.log( $.cookie( COOKIE_NAME)); // check the value // returns test
+     $.cookie(COOKIE_NAME, null, options);   // deletes the cookie
+     console.log( $.cookie( COOKIE_NAME)); // check the value // returns null
+ });
+ 
