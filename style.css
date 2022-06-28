@@ -4,10 +4,14 @@
     padding: 0;
     font-family: 'kumbh sans', sans-serif;
     scroll-behavior: smooth;
+<<<<<<< HEAD
     
 }
 .overflow{
     overflow-x: hidden;
+=======
+    overflow-x:hidden;
+>>>>>>> b0ea5fa223b4064e66dfe35016ec8771015e7cb9
 }
 .navbar{
     background: #131313;
@@ -429,7 +433,7 @@ background-size: 100%;
 
 }
 
-@media screen and(max-width:480px) {
+@media screen and (max-width:480px) {
     .main__img-card{
         width: 250px;
         height: 250px;
@@ -457,6 +461,37 @@ background-size: 100%;
     .main__btn{
         padding: 12px 36px;
         margin: 2.5rem 0;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .main__img-card{
+        width: 270px;
+        height: 270px;
+
+    }
+
+    .fa-layer-group, .fa-users{
+        font-size: 3rem;
+
+    }
+
+    .main__content h1{
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    .main__content h2{
+        font-size: 2rem;
+    }
+
+    .main__content p{
+        margin-top: 2rem;
+    }
+
+    .main__btn{
+        padding: 10px 32px;
+        margin: 2rem 0;
     }
 }
 
@@ -697,3 +732,5 @@ background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+
     }
     
 }
+
+
