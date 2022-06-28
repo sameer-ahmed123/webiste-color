@@ -457,6 +457,37 @@ background-size: 100%;
     }
 }
 
+@media screen and(max-width:320px) {
+    .main__img-card{
+        width: 230px;
+        height: 230px;
+
+    }
+
+    .fa-layer-group, .fa-users{
+        font-size: 3rem;
+
+    }
+
+    .main__content h1{
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    .main__content h2{
+        font-size: 2rem;
+    }
+
+    .main__content p{
+        margin-top: 2rem;
+    }
+
+    .main__btn{
+        padding: 10px 32px;
+        margin: 2rem 0;
+    }
+}
+
 /* services section */
 
 
@@ -694,3 +725,5 @@ background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+
     }
     
 }
+
+
